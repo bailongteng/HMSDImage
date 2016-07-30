@@ -82,8 +82,10 @@
         //回到主线程调用Block回调image
         [[NSOperationQueue mainQueue]addOperationWithBlock:^{
             compeletion(image);
-            //
+            
             [self.imageCache setObject:cacheImage forKey:urlString];
+            //清除操作缓存
+            [self.queue cancelAllOperations];
         }];
     }];
     //将操作添加到队列
