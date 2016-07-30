@@ -13,6 +13,9 @@
 		5CFAD2B51D4C93F9007F70D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFAD2B31D4C93F9007F70D3 /* Main.storyboard */; };
 		5CFAD2B71D4C93F9007F70D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CFAD2B61D4C93F9007F70D3 /* Assets.xcassets */; };
 		5CFAD2BA1D4C93F9007F70D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFAD2B81D4C93F9007F70D3 /* LaunchScreen.storyboard */; };
+		5CFAD2C41D4C945E007F70D3 /* HMDownLoadMarager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFAD2C31D4C945E007F70D3 /* HMDownLoadMarager.m */; };
+		5CFAD2C81D4C998D007F70D3 /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFAD2C71D4C998D007F70D3 /* NSString+path.m */; };
+		5CFAD2CB1D4CA335007F70D3 /* HMDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFAD2CA1D4CA335007F70D3 /* HMDownloadOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		5CFAD2B61D4C93F9007F70D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CFAD2B91D4C93F9007F70D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CFAD2BB1D4C93F9007F70D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CFAD2C21D4C945E007F70D3 /* HMDownLoadMarager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMDownLoadMarager.h; sourceTree = "<group>"; };
+		5CFAD2C31D4C945E007F70D3 /* HMDownLoadMarager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMDownLoadMarager.m; sourceTree = "<group>"; };
+		5CFAD2C61D4C998D007F70D3 /* NSString+path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+path.h"; sourceTree = "<group>"; };
+		5CFAD2C71D4C998D007F70D3 /* NSString+path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+path.m"; sourceTree = "<group>"; };
+		5CFAD2C91D4CA335007F70D3 /* HMDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMDownloadOperation.h; sourceTree = "<group>"; };
+		5CFAD2CA1D4CA335007F70D3 /* HMDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMDownloadOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				5CFAD2A91D4C93F9007F70D3 /* 仿SDWImage下载 */,
+				5CFAD2C51D4C998D007F70D3 /* CachePath */,
+				5CFAD2C11D4C9433007F70D3 /* HMWebImage */,
 				5CFAD2A81D4C93F9007F70D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +88,27 @@
 				5CFAD2AB1D4C93F9007F70D3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CFAD2C11D4C9433007F70D3 /* HMWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				5CFAD2C21D4C945E007F70D3 /* HMDownLoadMarager.h */,
+				5CFAD2C31D4C945E007F70D3 /* HMDownLoadMarager.m */,
+				5CFAD2C91D4CA335007F70D3 /* HMDownloadOperation.h */,
+				5CFAD2CA1D4CA335007F70D3 /* HMDownloadOperation.m */,
+			);
+			name = HMWebImage;
+			path = "仿SDWImage下载/HMWebImage";
+			sourceTree = "<group>";
+		};
+		5CFAD2C51D4C998D007F70D3 /* CachePath */ = {
+			isa = PBXGroup;
+			children = (
+				5CFAD2C61D4C998D007F70D3 /* NSString+path.h */,
+				5CFAD2C71D4C998D007F70D3 /* NSString+path.m */,
+			);
+			path = CachePath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CFAD2C81D4C998D007F70D3 /* NSString+path.m in Sources */,
 				5CFAD2B21D4C93F9007F70D3 /* ViewController.m in Sources */,
+				5CFAD2CB1D4CA335007F70D3 /* HMDownloadOperation.m in Sources */,
 				5CFAD2AF1D4C93F9007F70D3 /* AppDelegate.m in Sources */,
+				5CFAD2C41D4C945E007F70D3 /* HMDownLoadMarager.m in Sources */,
 				5CFAD2AC1D4C93F9007F70D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
